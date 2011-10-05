@@ -1,0 +1,185 @@
+\documentclass{article}
+
+%\usepackage{fullpage}
+\usepackage{geometry}
+
+\usepackage{graphicx}
+
+\usepackage{listings}
+\lstset{language=C}
+
+\title{Typesetting with \LaTeX}
+\author{Tim Kopp | Another Author}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\abstract{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+hendrerit dolor ac tellus lacinia ullamcorper. Duis nec lorem quam. Praesent
+luctus nibh vel libero fermentum eget mollis mi auctor. In mattis, ipsum rutrum
+dapibus porttitor, erat libero lobortis nibh, at sollicitudin turpis est sed mi.
+Praesent odio erat, fringilla ut sodales ut, posuere vel felis. Pellentesque
+habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+Aenean iaculis rutrum sapien imperdiet placerat. Vestibulum fringilla facilisis
+est sed lobortis.
+Donec sed nulla a massa lobortis vulputate. Curabitur eu
+mattis libero. Curabitur tortor erat, viverra eget vehicula eu, sollicitudin et
+justo. Sed eget eros libero. Mauris sed tortor ut leo lobortis dignissim. Sed
+ultricies, lorem nec tempor euismod, felis enim iaculis urna, a eleifend erat
+orci non dui. Sed et magna varius magna imperdiet dictum. }
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{Text Section Title}
+Morbi eu ante vitae felis hendrerit pulvinar vel at velit. Fusce nisl mi,
+bibendum nec eleifend nec, posuere et urna. Sed volutpat augue in dolor vehicula
+vulputate. Praesent odio massa, pulvinar id suscipit non, iaculis non lorem.
+Integer elementum consectetur enim, vel luctus ligula dignissim sed. Nulla
+molestie dictum suscipit. Aenean eget posuere sapien.
+
+\subsection{Subsection}
+Nullam dignissim viverra elementum. Nunc mauris leo, commodo et volutpat sit
+amet, elementum ac velit. Cras purus tellus, molestie non varius eu, imperdiet
+id dui. Donec odio arcu, posuere eu interdum in, placerat sit amet dui. Nulla
+vitae lacus arcu. Nullam vel sem ac erat suscipit feugiat. Donec est lorem,
+feugiat vitae faucibus sed, semper eget ligula. Suspendisse felis nunc, tempor
+imperdiet tincidunt id, eleifend at lacus. Phasellus tincidunt elit non enim
+interdum volutpat venenatis metus faucibus. Vestibulum ut metus vel lorem semper
+faucibus et id libero. Fusce luctus nisl ante, non dignissim elit. Fusce posuere
+ante eget mauris placerat cursus. Donec sem nulla, pulvinar et sodales et,
+tincidunt vitae mauris. Aliquam euismod dictum quam, ut aliquam mi pellentesque
+quis. Morbi ullamcorper, sapien mollis vehicula egestas, leo tortor mollis nisl,
+non viverra leo elit a urna. Lorem ipsum dolor sit amet, consectetur adipiscing
+elit.
+
+\subsubsection{Subsubsection}
+Donec pretium imperdiet congue. Vivamus vel lorem arcu, non congue nunc. Nam
+risus ante, porta quis condimentum vitae, mattis non augue. Phasellus ultrices
+pulvinar dolor, nec iaculis purus sagittis non. Integer hendrerit tellus a mi
+ultricies cursus. Maecenas sed ligula nisl. Duis placerat, nisl et rhoncus
+sagittis, dui nibh accumsan ipsum, vel convallis mi dolor in risus.
+
+\paragraph{Paragraph}
+Donec pretium imperdiet congue. Vivamus vel lorem arcu, non congue nunc. Nam
+risus ante, porta quis condimentum vitae, mattis non augue. Phasellus ultrices
+pulvinar dolor, nec iaculis purus sagittis non. Integer hendrerit tellus a mi
+ultricies cursus. Maecenas sed ligula nisl. Duis placerat, nisl et rhoncus
+sagittis, dui nibh accumsan ipsum, vel convallis mi dolor in risus.
+
+\subparagraph{Subparagraph}
+Donec pretium imperdiet congue. Vivamus vel lorem arcu, non congue nunc. Nam
+risus ante, porta quis condimentum vitae, mattis non augue. Phasellus ultrices
+pulvinar dolor, nec iaculis purus sagittis non. Integer hendrerit tellus a mi
+ultricies cursus. Maecenas sed ligula nisl. Duis placerat, nisl et rhoncus
+sagittis, dui nibh accumsan ipsum, vel convallis mi dolor in risus.
+
+\section{Let's Do Some Math!}
+
+\subsection{Inline Math}
+Text Text Text $y = mx + b$ more text
+
+\subsection{Equation}
+
+\begin{equation}
+y = \frac{b \pm \sqrt{b^{2} + 4ac}}{2a}
+\end{equation}
+
+
+\section{Common Document Elements}
+
+\subsection{Lists}
+
+We use ``itemize'' for unordered lists, and ``enumerate'' for ordered lists.
+
+Why \LaTeX is awesome:
+
+\begin{itemize}
+\item It makes beautiful documents
+\item A .tex input file will look identical no matter what platform it is
+compiled on.
+\item It works well with version control
+\item It makes typesetting math easy
+\item It does the formatting for you --- no fighting with word processors!
+\item The .tex input files take up little space compared to .doc files, etc.
+\end{itemize}
+
+\subsection{Figures \& Images}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale=0.4,angle=90]{resources/img.png}
+\caption{This be a caption}
+\label{fig:img}
+\end{figure}
+
+\subsection{Tables}
+
+\begin{table}[ht!]
+\centering
+\caption{Another Caption}
+\label{tab:stuff}
+\begin{tabular}{r|cl|}
+\hline
+a & b & c\\
+\hline
+1 & 2 & 3\\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Miscellaneous Stuff You Should Know}
+\subsection{A Note About Quotes}
+
+"This is in typical double quotes"
+
+This has a single quo'te
+
+This has a single back`quote
+
+``This is how we do quotes in \LaTeX.''
+
+\subsection{Text Modifiers}
+
+You can put text in \textbf{Bold} or \textit{Italics} or even use \textsc{Small
+Caps}. Unfortunately, the syntax for \underline{Underline} is a bit different,
+but that's okay --- you'll find you won't use it that often anyway.
+
+\subsection{Referencing Tables \& Figures}
+
+Text Text Text Table~\ref{tab:stuff} More text text Figure~\ref{fig:img}.
+
+\appendix
+
+\section{Formatting Source Code I: Verbatim Environment}
+\begin{verbatim}
+#include <stdio.h>
+
+int main( void )
+{
+        printf("Hello, world!\n");
+        return 0;
+}
+\end{verbatim}
+
+\section{Formatting Source Code II: Listing Environment}
+\begin{lstlisting}
+#include <stdio.h>
+
+int main( void )
+{
+        printf("Hello, world!\n");
+        return 0;
+}
+\end{lstlisting}
+
+
+\section{Formatting Source Code II: Listing a File}
+
+\lstinputlisting{resources/hello.c}
+
+\end{document}
