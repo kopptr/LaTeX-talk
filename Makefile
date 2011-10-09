@@ -4,3 +4,5 @@ talk.pdf: talk.tex
 
 clean:
 	rm -f *.{aux,log,pdf,toc}
+
+rebuild: clean talk.pdf
